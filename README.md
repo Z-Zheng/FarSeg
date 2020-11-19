@@ -45,10 +45,8 @@ ln -s </path/to/iSAID> ./isaid_segm
 ```
 
 ### Evaluate Model
-#### 1. download pretrained weight
-```bash
-wget https://github.com/Z-Zheng/FarSeg/releases/download/v1.0/farseg50.pth
-```
+#### 1. download pretrained weight in this [link](https://github.com/Z-Zheng/FarSeg/releases/download/v1.0/farseg50.pth)
+
 #### 2. move weight file to log directory
 ```bash
 mkdir -vp ./log/isaid_segm/farseg50
