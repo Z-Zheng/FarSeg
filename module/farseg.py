@@ -18,11 +18,11 @@ class SceneRelation(nn.Module):
                  in_channels,
                  channel_list,
                  out_channels,
-                 shared_scene=True):
+                 scale_aware_proj=True):
         super(SceneRelation, self).__init__()
         self.shared_scene = shared_scene
 
-        if not shared_scene:
+        if scale_aware_proj:
             self.scene_encoder = nn.ModuleList(
                 [nn.Sequential(
                     nn.Conv2d(in_channels, out_channels, 1),

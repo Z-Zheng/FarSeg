@@ -30,7 +30,7 @@ config = dict(
                 in_channels=2048,
                 channel_list=(256, 256, 256, 256),
                 out_channels=256,
-                shared_scene=False,
+                scale_aware_proj=True,
             ),
             decoder=dict(
                 in_channels=256,
