@@ -28,13 +28,30 @@ If you use FarSeg in your research, please cite the following paper:
 ```
 
 ## Getting Started
-### 1. Install SimpleCV
+### Install SimpleCV
 
 ```bash
 pip install --upgrade git+https://github.com/Z-Zheng/SimpleCV.git
 ```
+
+Requirements:
+#### Requirements:
+- pytorch >= 1.1.0
+- python >=3.6
+
 ### Prepare iSAID Dataset
 
 ```bash
 ln -s </path/to/iSAID> ./isaid_segm
+```
+
+### Train Model
+```bash
+bash ./scripts/train_farseg50.sh
+```
+
+
+### Evaluate Model
+```bash
+bash ./scripts/eval_farseg50.sh
 ```
