@@ -1,11 +1,19 @@
 <h2 align="center">Foreground-Aware Relation Network for Geospatial Object Segmentation in High Spatial Resolution Remote Sensing Imagery</h2>
 <!-- <h5 align="center">Foreground-Aware Relation Network for Geospatial Object Segmentation in High Spatial Resolution Remote Sensing Imagery</h5> -->
 
-<h5 align="right">by <a href="http://zhuozheng.top/">Zhuo Zheng</a>, <a href="http://rsidea.whu.edu.cn/">Yanfei Zhong</a>, Ailong Ma and <a href="http://www.lmars.whu.edu.cn/prof_web/zhangliangpei/rs/index.html">Liangpei Zhang</a></h5>
+
+
+<h5 align="right">by <a href="http://zhuozheng.top/">Zhuo Zheng</a>, <a href="http://rsidea.whu.edu.cn/">Yanfei Zhong</a>, <a href="https://junjue-wang.github.io/homepage/">Junjue Wang</a> and Ailong Ma</h5>
+
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/Z-Zheng/images_repo/master/farseg.png"><br><br>
 </div>
+
+This is an official implementation of FarSeg in our CVPR 2020 paper [Foreground-Aware Relation Network for Geospatial Object Segmentation in High Spatial Resolution Remote Sensing Imagery](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zheng_Foreground-Aware_Relation_Network_for_Geospatial_Object_Segmentation_in_High_Spatial_CVPR_2020_paper.pdf).
+
+---------------------
+
 
 ## Citation
 If you use FarSeg in your research, please cite the following paper:
@@ -20,7 +28,7 @@ If you use FarSeg in your research, please cite the following paper:
 ```
 
 ## Getting Started
-### Install SimpleCV
+### 1. Install SimpleCV
 
 ```bash
 pip install --upgrade git+https://github.com/Z-Zheng/SimpleCV.git
