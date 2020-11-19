@@ -20,7 +20,7 @@ class SceneRelation(nn.Module):
                  out_channels,
                  scale_aware_proj=True):
         super(SceneRelation, self).__init__()
-        self.shared_scene = shared_scene
+        self.scale_aware_proj = scale_aware_proj
 
         if scale_aware_proj:
             self.scene_encoder = nn.ModuleList(
@@ -59,7 +59,7 @@ class SceneRelation(nn.Module):
 
     def forward(self, scene_feature, features: list):
         content_feats = [c_en(p_feat) for c_en, p_feat in zip(self.content_encoders, features)]
-        if not self.shared_scene:
+        if self.scale_aware_proj:
             scene_feats = [op(scene_feature) for op in self.scene_encoder]
             relations = [self.normalizer((sf * cf).sum(dim=1, keepdim=True)) for sf, cf in
                          zip(scene_feats, content_feats)]
