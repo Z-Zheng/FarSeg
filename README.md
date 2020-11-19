@@ -34,7 +34,6 @@ If you use FarSeg in your research, please cite the following paper:
 pip install --upgrade git+https://github.com/Z-Zheng/SimpleCV.git
 ```
 
-Requirements:
 #### Requirements:
 - pytorch >= 1.1.0
 - python >=3.6
