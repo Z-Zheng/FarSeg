@@ -1,5 +1,6 @@
 from simplecv import apex_ddp_train as train
 from data import isaid
+from module import farseg
 import torch
 
 if __name__ == '__main__':
