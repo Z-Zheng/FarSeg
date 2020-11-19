@@ -44,13 +44,24 @@ pip install --upgrade git+https://github.com/Z-Zheng/SimpleCV.git
 ln -s </path/to/iSAID> ./isaid_segm
 ```
 
+### Evaluate Model
+#### 1. download pretrained weight
+```bash
+wget https://github.com/Z-Zheng/FarSeg/releases/download/v1.0/farseg50.pth
+```
+#### 2. move weight file to log directory
+```bash
+mkdir -vp ./log/isaid_segm/farseg50
+mv ./farseg50.pth ./log/isaid_segm/farseg50/model-60000.pth
+```
+#### 3. inference on iSAID val
+```bash
+bash ./scripts/eval_farseg50.sh
+```
+
 ### Train Model
 ```bash
 bash ./scripts/train_farseg50.sh
 ```
 
 
-### Evaluate Model
-```bash
-bash ./scripts/eval_farseg50.sh
-```
