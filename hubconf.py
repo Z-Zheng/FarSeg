@@ -59,7 +59,9 @@ def farseg_resnet50(pretrained=False, progress=True):
     if pretrained:
         state_dict = load_state_dict_from_url(model_urls['farseg_resnet50_isaid'], progress=progress)
         model_state_dict = state_dict[checkpoint.CheckPoint.MODEL]
+        model_state_dict = {k.replace('module.', ''): v for k, v in model_state_dict.items()}
         model.load_state_dict(model_state_dict)
         model.eval()
+        return model
     else:
         return model
