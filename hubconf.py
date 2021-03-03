@@ -24,7 +24,7 @@ def farseg_resnet50(pretrained=False, progress=True):
                 resnet_type='resnet50',
                 include_conv5=True,
                 batchnorm_trainable=True,
-                pretrained=True,
+                pretrained=False,
                 freeze_at=0,
                 # 8, 16 or 32
                 output_stride=32,
@@ -41,7 +41,7 @@ def farseg_resnet50(pretrained=False, progress=True):
                 in_channels=2048,
                 channel_list=(256, 256, 256, 256),
                 out_channels=256,
-                shared_scene=False,
+                scale_aware_proj=True,
             ),
             decoder=dict(
                 in_channels=256,
