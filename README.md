@@ -3,7 +3,7 @@
 
 
 
-<h5 align="right">by <a href="http://zhuozheng.top/">Zhuo Zheng</a>, <a href="http://rsidea.whu.edu.cn/">Yanfei Zhong</a>, <a href="https://junjue-wang.github.io/homepage/">Junjue Wang</a> and Ailong Ma</h5>
+<h5><a href="http://zhuozheng.top/">Zhuo Zheng</a>, <a href="http://rsidea.whu.edu.cn/">Yanfei Zhong</a>, <a href="https://junjue-wang.github.io/homepage/">Junjue Wang</a> and Ailong Ma</h5>
 
 
 <div align="center">
@@ -13,10 +13,12 @@
 This is an official implementation of FarSeg in our CVPR 2020 paper [Foreground-Aware Relation Network for Geospatial Object Segmentation in High Spatial Resolution Remote Sensing Imagery](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zheng_Foreground-Aware_Relation_Network_for_Geospatial_Object_Segmentation_in_High_Spatial_CVPR_2020_paper.pdf).
 
 ---------------------
-
+## News
+- 2023/10, [UV6K dataset](https://zenodo.org/record/8404754) is publcily available.
+- 2023/07, FarSeg++ is accepted by IEEE TPAMI.
 
 ## Citation
-If you use FarSeg in your research, please cite the following paper:
+If you use FarSeg or FarSeg++ in your research, please cite the following paper:
 ```text
 @inproceedings{zheng2020foreground,
   title={Foreground-Aware Relation Network for Geospatial Object Segmentation in High Spatial Resolution Remote Sensing Imagery},
@@ -24,6 +26,16 @@ If you use FarSeg in your research, please cite the following paper:
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={4096--4105},
   year={2020}
+}
+@article{zheng2023farseg++,
+  title={FarSeg++: Foreground-Aware Relation Network for Geospatial Object Segmentation in High Spatial Resolution Remote Sensing Imagery},
+  author={Zheng, Zhuo and Zhong, Yanfei and Wang, Junjue and Ma, Ailong and Zhang, Liangpei},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2023},
+  volume={45},
+  number={11},
+  pages={13715-13729},
+  publisher={IEEE}
 }
 ```
 
