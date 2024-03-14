@@ -14,6 +14,7 @@ This is an official implementation of FarSeg in our CVPR 2020 paper [Foreground-
 
 ---------------------
 ## News
+- 2024/03, source code of FarSeg++ is released.
 - 2023/10, [UV6K dataset](https://zenodo.org/record/8404754) is publcily available.
 - 2023/07, FarSeg++ is accepted by IEEE TPAMI.
 
